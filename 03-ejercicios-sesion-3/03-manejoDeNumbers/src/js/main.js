@@ -97,6 +97,9 @@ console.log(Math);
 //(valorSuperios - valorInferior) + valorInferior
 
 
-let numeroAleatorio = Math.round(Math.random(60 -20) + 20)
+let numeroAleatorio = Math.round(Math.random(60 - 20) + 20)
 document.write(numeroAleatorio)
 console.log(Math);
+
+
+console.log(Math.random());
