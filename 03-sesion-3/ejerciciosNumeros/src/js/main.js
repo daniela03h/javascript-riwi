@@ -156,17 +156,49 @@ let radio1 = 6
 let diametro = 2 * radio
 let pi = Math.PI
 
+⁠// 35. Calcular el volumen de un cubo con lado 4.
+const lado1 = 4
+const volumenDeCubo = lado * lado * lado
+console.log('Volumen de Cubo con lado 4:', volumenDeCubo)
 
-
-// 35. Calcular el volumen de un cubo con lado 4.
 // 36. Calcular el área de un rombo con diagonales de 8 y 10.
+const diagonal1 = 8
+const diagonal2 = 10
+const areaDeRombo = (diagonal1 * diagonal2) / 2
+console.log('Area de rombo con diagonal 8 y 10:', areaDeRombo)
+
 // 37. Calcular el área de un trapecio con bases 6 y 10 y altura 4.
+const baseMayor = 10
+const baseMenor = 6
+const altura2 = 4
+const areaTrapecio = ((baseMayor + baseMenor) * altura) / 2
+console.log('Area trapecio con bases 6 y 10 altura 4:', areaTrapecio)
+
 // 38. Generar la tabla de multiplicar del número 8.
+console.log('Tabla de multiplicar del 8:')
+for (let i = 1; i <= 10; i++){
+    console.log(`8 x ${i} = ${8 * i}`)
+}
+
 // 39. Encontrar el número mayor entre 15, 20 y 25.
+console.log('Numero mayor entre 15 20 25:', Math.max(15, 20 ,25))
+
 // 40. Encontrar el número menor entre 50, 75 y 100.
+console.log('Numero menor entre 50 75 100:', Math.min(50, 75, 100))
+
 // 41. Calcular el promedio de 7, 9 y 12.
+console.log('Calcular el promedio de 7 9 12:', (7 + 9 + 12) / 3)
+
 // 42. Calcular la factorial de 7.
+let factorialDe7 = 1
+for(let i = 1; i <= 7; i++) {
+    factorialDe7 = factorialDe7 * i
+}
+console.log('Factorial del numero 7:', factorialDe7)
+
 // 43. Redondear el número 7.9.
+console.log('Numero redondeado de 7.9', Math.round(7.9)) 
+
 // 44. Calcular el doble de 15.
 // 45. Calcular el triple de 6.
 // 46. Calcular el cuadrado de 8.
