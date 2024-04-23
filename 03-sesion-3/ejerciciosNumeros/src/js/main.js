@@ -197,23 +197,64 @@ for(let i = 1; i <= 7; i++) {
 console.log('Factorial del numero 7:', factorialDe7)
 
 // 43. Redondear el número 7.9.
-console.log('Numero redondeado de 7.9', Math.round(7.9)) 
+console.log('Numero redondeado de 7.9', Math.round(7.9))
 
 // 44. Calcular el doble de 15.
+console.log("El doble de 15 es", 15*2)
+
 // 45. Calcular el triple de 6.
+console.log("El doble de 15 es", 6*3)
+
 // 46. Calcular el cuadrado de 8.
+console.log(Math.pow(8,2))
+
 // 47. Calcular el cubo de 4.
+console.log(Math.pow(4,3))
+
 // 48. Calcular la suma de los primeros 15 números naturales.
+let suma1 = 0
+for (let i = 1; i <= 15; i++) {
+    suma1+= i
+}
+
+console.log("la suma es", suma1)
+
 // 49. Calcular la resta entre 100 y 55.
+console.log(100-55)
+
 // 50. Multiplicar 6 por 8.
+console.log(6*8)
+
 // 51. Dividir 225 por 15.
+console.log(225/15)
+
 // 52. Obtener el módulo de 20 dividido por 7.
+console.log(20%7)
+
 // 53. Generar un número aleatorio entre 40 y 50.
+let numeroAleatorio4 = Math.round(Math.random() * (50-40)+40)
+console.log(numeroAleatorio4)
+
 // 54. Elevar 3 a la potencia de 4.
+console.log(Math.pow(3,4))
+
 // 55. Calcular la raíz cuadrada de 169.
+console.log(Math.sqrt(169))
+
 // 56. Convertir 80 grados Celsius a Fahrenheit.
+let celsius1 = 80
+console.log((9/5*celsius)+32)
+
 // 57. Calcular el área de un rectángulo de base 8 y altura 12.
+let base2 = 8
+let altura3 = 12
+let area2 = (1/2)
+console.log(area2)
+
 // 58. Calcular el perímetro de un círculo con radio 8.
+let radio2 = 8
+console.log(2 * Math.PI * radio2)
+
 // 59. Calcular el volumen de un cubo con lado 5.
 // 60. Calcular el área de un rombo con diagonales de 12 y 16.
 // 61. Calcular el área de un trapecio con bases 8 y 12 y altura 6.62. Generar la tabla de multiplicar del número 9.
