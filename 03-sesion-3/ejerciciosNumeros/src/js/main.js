@@ -19,7 +19,7 @@ console.log(modulo);
 
 //6. Generar un número aleatorio entre 1 y 10.
 let numeroAleatorioExplicacion = Math.round(Math.random(10 - 1) + 1)
-console.log(numeroAleatorio)
+console.log(numeroAleatorioExplicacion)
 let max = 20;
 let min = 11;
 console.log(`
@@ -153,10 +153,12 @@ console.log(base1*altura1)
 
 // 34. Calcular el perímetro de un círculo con radio 6.
 let radio1 = 6
-let diametro = 2 * radio
 let pi = Math.PI
+let perimetro1 = 2 * pi * radio
 
-⁠// 35. Calcular el volumen de un cubo con lado 4.
+console.log(perimetro1)
+
+//35. Calcular el volumen de un cubo con lado 4.
 const lado1 = 4
 const volumenDeCubo = lado * lado * lado
 console.log('Volumen de Cubo con lado 4:', volumenDeCubo)
@@ -171,7 +173,7 @@ console.log('Area de rombo con diagonal 8 y 10:', areaDeRombo)
 const baseMayor = 10
 const baseMenor = 6
 const altura2 = 4
-const areaTrapecio = ((baseMayor + baseMenor) * altura) / 2
+const areaTrapecio = ((baseMayor + baseMenor) * altura2) / 2
 console.log('Area trapecio con bases 6 y 10 altura 4:', areaTrapecio)
 
 // 38. Generar la tabla de multiplicar del número 8.
@@ -256,38 +258,161 @@ let radio2 = 8
 console.log(2 * Math.PI * radio2)
 
 // 59. Calcular el volumen de un cubo con lado 5.
+const lado2 = 5
+const volumenDeCubo2 = lado * lado * lado
+console.log('Volumen de Cubo con lado 5:', volumenDeCubo)
+
+console.log(Math.pow(lado2, 3))
+
 // 60. Calcular el área de un rombo con diagonales de 12 y 16.
-// 61. Calcular el área de un trapecio con bases 8 y 12 y altura 6.62. Generar la tabla de multiplicar del número 9.
+const diagonal3 = 12
+const diagonal4 = 16
+const areaDeRombo2 = (diagonal3 * diagonal4) / 2
+console.log('Area de rombo con diagonal 8 y 10:', areaDeRombo)
+
+// 61. Calcular el área de un trapecio con bases 8 y 12 y altura 6.
+const baseMayor1 = 8
+const baseMenor2 = 12
+const altura4 = 6
+const areaTrapecio2 = ((baseMayor1 + baseMenor2) * altura4) / 2
+console.log('Area trapecio con bases 6 y 10 altura 4:', areaTrapecio)
+
+//62. Generar la tabla de multiplicar del número 9.
+for (let i = 1; i <= 10; i++){
+    let resultado = 9 *i
+    console.log(resultado)
+}
+
 // 63. Encontrar el número mayor entre 25, 30 y 35.
+console.log(Math.max(25,30,35))
+
 // 64. Encontrar el número menor entre 80, 95 y 110.
+console.log(Math.min(80, 95, 100))
+
 // 65. Calcular el promedio de 8, 10 y 14.
+console.log((8 + 10 + 14) /3)
+
 // 66. Calcular la factorial de 8.
+let n1 = 8
+let factorial1 = 1
+
+for (let i = 1; i <= n1; i++) {
+    factorial1*= i;
+}
+console.log(factorial1)
+
 // 67. Redondear el número 9.2.
+console.log(Math.round(9.2))
+
 // 68. Calcular el doble de 18.
+console.log(18*2)
+
 // 69. Calcular el triple de 7.
+console.log(7*3)
+
 // 70. Calcular el cuadrado de 10.
+console.log(Math.pow(10,2))
+
 // 71. Calcular el cubo de 5.
+console.log(Math.pow(5,3))
+
 // 72. Calcular la suma de los primeros 20 números naturales.
+let suma2 = 0
+for (let i = 1; i <= 20; i++) {
+    suma2+= i
+}
+
+console.log("la suma es", suma2)
+
 // 73. Calcular la resta entre 200 y 75.
+console.log(200-75)
+
 // 74. Multiplicar 9 por 11.
+console.log(9*11)
+
 // 75. Dividir 300 por 25.
+console.log(300/25)
+
 // 76. Obtener el módulo de 30 dividido por 9.
+console.log(30%9)
+
 // 77. Generar un número aleatorio entre 60 y 70.
+let numeroAle = Math.round(Math.random(70 - 60) + 60)
+console.log(numeroAle)
+
 // 78. Elevar 4 a la potencia de 5.
+console.log(Math.pow(4,5))
+
 // 79. Calcular la raíz cuadrada de 196.
+console.log(Math.sqrt(196))
+
 // 80. Convertir 120 grados Celsius a Fahrenheit.
+let cel = 120
+console.log((9/5*celsius)+32)
+
 // 81. Calcular el área de un rectángulo de base 10 y altura 15.
+console.log(10*15)
+
 // 82. Calcular el perímetro de un círculo con radio 10.
+let radio5 = 6
+let perimetro2 = 2 * Math.PI * radio
+
+console.log(perimetro2)
+
 // 83. Calcular el volumen de un cubo con lado 6.
+console.log(Math.pow(6, 3))
+
 // 84. Calcular el área de un rombo con diagonales de 14 y 18.
+const areaDeRombo3 = (14 * 18) / 2
+console.log('Area de rombo con diagonal 8 y 10:', areaDeRombo)
+
 // 85. Calcular el área de un trapecio con bases 10 y 15 y altura 8.
+const areaTrapecio3 = ((10 + 15) * 8) / 2
+console.log('Area trapecio con bases 6 y 10 altura 4:', areaTrapecio)
+
 // 86. Generar la tabla de multiplicar del número 10.
+for (let i = 1; i <= 10; i++){
+    let resultado = 19 *i
+    console.log(resultado)
+}
+
 // 87. Encontrar el número mayor entre 35, 40 y 45.
+console.log(Math.max(34, 40, 45))
+
 // 88. Encontrar el número menor entre 90, 105 y 120.
+console.log(Math.min(90, 105, 120))
+
 // 89. Calcular el promedio de 9, 11 y 15.
+console.log((9 + 11 + 15) / 3)
+
 // 90. Calcular la factorial de 9.
+let n2 = 9
+let factorial2 = 1
+
+for (let i = 1; i <= n2; i++) {
+    factorial2*= i;
+}
+console.log(factorial2)
+
 // 91. Redondear el número 10.8.
-// 92. Calcular el doble de 21.93. Calcular el triple de 8.
+console.log(Math.round(10.8))
+
+// 92. Calcular el doble de 21.
+console.log(21*2)
+
+//93. Calcular el triple de 8.
+console.log(8*3)
+
 // 94. Calcular el cuadrado de 12.
+console.log(Math.pow(12,2))
+
 // 95. Calcular el cubo de 6.
+console.log(Math.pow(6,3))
+
 // 96. Calcular la suma de los primeros 25 números naturales.
+let suma3 = 0
+for (let i = 1; i <= 25; i++) {
+    suma3+= i
+}
+
+console.log("la suma es", suma3)

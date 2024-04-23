@@ -128,3 +128,103 @@ console.group("Ejercicio 20");
 console.log('cadena de texto con mas de diez caracteres'.length > 10)
 console.groupEnd();
 
+console.groupCollapsed("Ejercicio 21");
+// Ejercicio 21
+// 21.Verifica si una cadena de texto está en minúsculas.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 22");
+// Ejercicio 22
+// 22.Determina si una cadena de texto contiene al menos un número.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 23");
+// Ejercicio 23
+// 23.Verifica si una cadena de texto termina con un punto (.)
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 24");
+// Ejercicio 24
+// 24.Determina si una cadena de texto es un pangrama (contiene todas las letras del alfabeto).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 25");
+// Ejercicio 25
+// 25.Verifica si un día de la semana es laborable (de lunes a viernes).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 26");
+// Ejercicio 26
+// 26.Determina si un día es fin de semana (sábado o domingo).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 27");
+// Ejercicio 27
+// 27.Verifica si un número representa un mes válido (del 1 al 12).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 28");
+// Ejercicio 28
+// 28.Determina si una hora está en el rango de 9 AM a 6 PM.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 29");
+// Ejercicio 29
+// 29.Verifica si una persona es mayor de 65 años o menor de 18 años.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 30");
+// Ejercicio 30
+// 30.Determina si un triángulo es equilátero (tres lados iguales).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 31");
+// Ejercicio 31
+// 31.Verifica si un triángulo es isósceles (dos lados iguales).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 32");
+// Ejercicio 32
+// 32.Determina si un triángulo es escaleno (todos los lados diferentes).
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 33");
+// Ejercicio 33
+// 33.Verifica si un número es mayor que el doble de otro número.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 34");
+// Ejercicio 34
+// 34.Determina si la suma de dos números es mayor que 100.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 35");
+// Ejercicio 35
+// 35.Verifica si la resta de dos números es menor que 50.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 36");
+// Ejercicio 36
+// 36.Determina si un número es el doble del otro número.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 37");
+// Ejercicio 37
+// 37.Verifica si el doble de un número es igual al triple de otro número.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 38");
+// Ejercicio 38
+// 38.Determina si la suma de dos números es igual a 50.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 39");
+// Ejercicio 39
+// 39.Verifica si el producto de dos números es mayor que 500.
+console.groupEnd();
+
+console.groupCollapsed("Ejercicio 40");
+// Ejercicio 40
+// 40.Determina si la división de dos números es menor que 10.
+console.groupEnd();
+
