@@ -1,96 +1,164 @@
 console.groupCollapsed("Ejercicio 1");
 // Ejercicio 1
 // 1. Crea un objeto llamado persona con propiedades como nombre, edad y ciudad.
+
+let persona = {
+    nombre: "daniela",
+    edad: "30",
+    ciudad: "medellin"
+}
+
+console.log(persona)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 2");
 // Ejercicio 2
 // 2. Agrega una propiedad adicional al objeto persona que represente su ocupación.
+persona.ocupacion = "estudiante"
+console.log(persona)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 3");
 // Ejercicio 3
 // 3. Accede a una propiedad del objeto persona y muestra su valor en la consola.
+console.log(persona.ciudad)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 4");
 // Ejercicio 4
 // 4. Crea otro objeto llamado libro con propiedades como título, autor y año de publicación.
+let libro = {
+    titulo: "Hábitos Atómicos",
+    autor: "James Clear",
+    añoDePublicacion: "8 de septiembre de 2020"
+}
+
+console.log(libro)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 5");
 // Ejercicio 5
 // 5. Combina las propiedades de los objetos persona y libro en un nuevo objeto llamado informacion.
+let informacion = {...persona, ...libro}
+
+console.log(informacion)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 6");
 // Ejercicio 6
 // 6. Cambia el valor de una propiedad en el objeto persona.
+persona.ciudad = "cali"
+console.log(persona)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 7");
 // Ejercicio 7
 // 7. Elimina una propiedad del objeto libro.
+delete libro.autor
+console.log(libro)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 8");
 // Ejercicio 8
 // 8. Crea un objeto llamado coche con propiedades como modelo, marca y año.
+let coche = {
+    modelo: "golf",
+    marca: "volkswagen",
+    año: "2016"
+}
+console.log(coche)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 9");
 // Ejercicio 9
 // 9. Muestra todas las propiedades del objeto coche en la consola.
+console.log(Object.keys(coche))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 10");
 // Ejercicio 10
 // 10.Agrega un método al objeto coche que imprima un mensaje en la consola.
+coche.saludar = function(){
+    console.log(`Hola soy un ${this.marca} del año ${this.año}`);
+}
+console.log(coche.saludar())
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 11");
 // Ejercicio 11
 // 11.Crea un objeto llamado circulo con propiedades como radio y color.
+let circulo = {
+    radio: "5",
+    color: "negro"
+}
+console.log(circulo)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 12");
 // Ejercicio 12
 // 12.Calcula el área del círculo utilizando la fórmula A = πr2 y muestra el resultado.
+let area = Math.PI * Math.pow(circulo.radio, 2)
+let area1 = Math.PI * circulo.radio * circulo.radio
+console.log(area)
+console.log(area1)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 13");
 // Ejercicio 13
 // 13.Crea un objeto llamado rectangulo con propiedades como ancho y alto.
+let rectangulo = {
+    ancho: "5",
+    alto: "10"
+}
+console.log(rectangulo)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 14");
 // Ejercicio 14
 // 14.Calcula el perímetro del rectángulo utilizando la fórmula P = 2 * (ancho + alto) y muestra el resultado.
+let perimetro = 2 * (Number(rectangulo.ancho) + Number(rectangulo.alto))
+console.log(perimetro)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 15");
 // Ejercicio 15
 // 15.Combina las propiedades de los objetos circulo y rectangulo en un nuevo objeto llamado formas.
+let formas = {...circulo, ...rectangulo}
+console.log(formas)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 16");
 // Ejercicio 16
 // 16.Crea un objeto llamado computadora con propiedades como marca, modelo y precio.
+let computadora = {
+    marca: "dell",
+    modelo: "vostro",
+    precio: "2.500.000"
+}
+console.log(computadora)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 17");
 // Ejercicio 17
 // 17.Muestra el precio de la computadora en la consola.
+console.log(computadora.precio)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 18");
 // Ejercicio 18
 // 18.Agrega una propiedad al objeto computadora que indique si tiene o no una tarjeta gráfica.
+computadora.tarjetaGrafica = true
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 19");
 // Ejercicio 19
 // 19.Crea un objeto llamado mascota con propiedades como nombre, especie y edad.
+let mascota = {
+    nombre: "pistacho",
+    especie: "bulldog",
+    edad: "8 años"
+}
+console.log(mascota)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 20");
