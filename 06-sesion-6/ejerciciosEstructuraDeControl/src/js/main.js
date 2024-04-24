@@ -11,7 +11,7 @@ console.groupCollapsed("Ejercicio 1")
 // let num2 = Number(prompt("Ingresa otro numero:"))
 
 // if (num1 > num2) {
-//     let resta = (num2 - num1)
+//     let resta = (num1 - num2)
 //     let strResta = String(resta)
 //     let estado = strResta.includes("-")
 //     console.log(`${num2} - ${num1} = ${resta} y ${estado} si es un numero negativo`)
@@ -19,6 +19,18 @@ console.groupCollapsed("Ejercicio 1")
 //     console.log("El primero es menor que el segundo numero")
 // }
 
+// if (num1 > num2) {
+//     let resta = (num1 - num2)
+//     if (Math.sign(resta)===1){
+//         let respuesta = `es ${resta} un positivo`
+//         console.log(respuesta.toString())
+//     } else {
+//         console.log("es un negativo")
+//     }
+    
+// } else {
+//     console.log("El primero es menor que el segundo numero")
+// }
 console.groupEnd()
 
 console.groupCollapsed("Ejercicio 2")
@@ -31,16 +43,33 @@ console.groupCollapsed("Ejercicio 2")
 // redondear el resultado y conviértelo a un número decimal utilizando
 // Number.parseFloat(text) antes de mostrarlo en consola.
 
-function mostraMenu() {
-    prompt(
-        "Selecciona una opcion: 1. Opcion 1 2. Opcion 2 3. Opcion 3 4. Opcion 4"
-    )
+let operacion = prompt("diga que operacion vas a hacer").toLowerCase()
+let numero1  = (prompt("ingrese el primer numero"))
+let numero2  = (prompt("ingrese el segundo numero"))
+let respuesta
+
+switch (operacion) {
+    case "sumar":
+        respuesta = numero1 + numero2
+        respuesta = parseFloat(Math.round(respuesta))
+        console.log("la suma de los numeros es", respuesta)
+    break;
+    case "restar":
+        respuesta = numero1 - numero2
+        respuesta =parseFloat(Math.round(respuesta))
+        console.log("la suma de los numeros es", respuesta)
+    break;
+    case "multiplicar":
+        respuesta = numero1 * numero2
+        respuesta =parseFloat(Math.round(respuesta))
+        console.log("la suma de los numeros es", respuesta)
+    break;
+    case "dividir":
+        respuesta = numero1 / numero2
+        respuesta = parseFloat(Math.round(respuesta))
+        console.log("la suma de los numeros es", respuesta)
+    break;
 }
-
-mostraMenu()
-
-
-
 
 console.groupEnd()
 
