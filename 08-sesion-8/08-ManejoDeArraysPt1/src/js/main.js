@@ -78,11 +78,11 @@ console.log(sumaNumeros);
 console.groupEnd()
 
 console.groupCollapsed("Listar informacion")
-const listaSupermercado = ["arroz", "pan", "arepa", "agupanela", "huevos", "guero", "pescado", "cafe", "queso", "leche", "carne"]
+let listaSupermercado = ["arroz", "pan", "arepa", "agupanela", "huevos", "guero", "pescado", "cafe", "queso", "leche", "carne"]
 
 console.log("...for...")
 for (let i = 0; i < listaSupermercado.length; i++) {
-    console.log(listaSupermercado[i])
+    console.log(listaSupermercado[i].toLocaleUpperCase())
 }
 
 console.log("...while...")
@@ -102,4 +102,15 @@ listaSupermercado.forEach(lista => {
     console.log(lista)
 })
 
+console.log(listaSupermercado)
+
+console.log("...map...")
+// listaSupermercado = listaSupermercado.map(lista => {
+//     console.log(lista.toUpperCase())
+//     return lista.toUpperCase()
+// })
+
+listaSupermercado = listaSupermercado.map(producto => producto.toUpperCase())
+
+console.log(listaSupermercado)
 console.groupEnd()
