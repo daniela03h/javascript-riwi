@@ -164,105 +164,186 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 20");
 // Ejercicio 20
 // 20.Muestra en la consola la especie de la mascota en mayúsculas.
+console.log(mascota.especie)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 21");
 // Ejercicio 21
 // 21.Crea un objeto llamado fruta con propiedades como nombre y color.
+let fruta = { 
+    nombre: "manzana",
+    color: "rojo"
+}
+console.log(fruta)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 22");
 // Ejercicio 22
 // 22.Agrega un método al objeto fruta que imprima un mensaje indicando si la fruta está madura.
+fruta.madura = function(){
+    console.log(`La ${this.nombre} esta madura`);
+}
+fruta.madura()
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 23");
 // Ejercicio 23
 // 23.Crea un objeto llamado estudiante con propiedades como nombre, edad y calificaciones.
+let estudiante = {
+    nombre: "daniela",
+    edad: "30",
+    calificacion: {
+        matematicas: 5,
+        ingles: 4,
+        sociales: 3
+    }
+}
+console.log(estudiante)
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 24");
 // Ejercicio 24
 // 24.Muestra en la consola el promedio de las calificaciones del estudiante.
+let sumaNotas = estudiante.calificacion.matematicas + estudiante.calificacion.ingles + estudiante.calificacion.sociales
+let promedio = sumaNotas / 3
+console.log(promedio)
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 25");
 // Ejercicio 25
 // 25.Agrega una propiedad al objeto estudiante que indique si ha aprobado o no.
+estudiante.aprobo = true
+console.log(estudiante)
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 26");
 // Ejercicio 26
 // 26.Crea un objeto llamado bolsa con propiedades como tamaño y color.
+let bolsa = { 
+    tamano: "20cm",
+    color: "negra"
+}
+console.log(bolsa)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 27");
 // Ejercicio 27
 // 27.Muestra en la consola un mensaje que indique la capacidad de la bolsa (tamaño).
+console.log(bolsa.tamano)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 28");
 // Ejercicio 28
 // 28.Agrega un método al objeto bolsa que cambie su color.
+bolsa.cambioColor = function(){
+    this.color = "azul"
+    console.log(`El color de la bolsa ahora es ${this.color}`);
+}
+bolsa.cambioColor()
+console.log(bolsa)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 29");
 // Ejercicio 29
 // 29.Crea un objeto llamado telefono con propiedades como marca, modelo y sistema operativo.
+let telefono = { 
+    marca: "iphone",
+    modelo: "13",
+    sistemaOperativo: "ios"
+}
+console.log(telefono)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 30");
 // Ejercicio 30
 // 30.Muestra en la consola un mensaje indicando el sistema operativo del teléfono.
+console.log(telefono.sistemaOperativo);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 31");
 // Ejercicio 31
 // 31.Agrega una propiedad al objeto telefono que represente la cantidad de memoria RAM.
+telefono.memoriaRam = "128g"
+console.log(telefono)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 32");
 // Ejercicio 32
 // 32.Crea un objeto llamado animal con propiedades como tipo y sonido.
+let animal = {
+    tipo: "canino",
+    sonido: "ladridos"
+}
+console.log(animal);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 33");
 // Ejercicio 33
 // 33.Muestra en la consola un mensaje que indique el sonido del animal.
+console.log(animal.sonido);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 34");
 // Ejercicio 34
 // 34.Agrega un método al objeto animal que imprima un mensaje indicando su tipo y sonido.
+animal.propiedades = function(){
+    console.log(`El animal es de tipo ${this.tipo} y realiza unos sonidos de ${this.sonido}`)
+}
+animal.propiedades()
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 35");
 // Ejercicio 35
 // 35.Crea un objeto llamado vuelo con propiedades como aerolínea, número de vuelo y hora de salida.
+let vuelo = { 
+    aerolinea: "avianca",
+    numeroDeVuelo: "a42",
+    horaSalida: "8pm"
+}
+console.log(vuelo)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 36");
 // Ejercicio 36
 // 36.Muestra en la consola un mensaje que indique la aerolínea y el número de vuelo.
+console.log(`la aerolinia es ${vuelo.aerolinea} y el numero de vuelo es ${vuelo.numeroDeVuelo}`)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 37");
 // Ejercicio 37
 // 37.Agrega una propiedad al objeto vuelo que represente el destino del vuelo.
+vuelo.destino = "cartagena"
+console.log(vuelo)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 38");
 // Ejercicio 38
 // 38.Crea un objeto llamado jugador con propiedades como nombre, equipo y posición.
+let jugador = { 
+    nombre: "felipe",
+    equipo: "nacional",
+    posicion: "delantero"
+}
+console.log(jugador)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 39");
 // Ejercicio 39
 // 39.Muestra en la consola un mensaje que indique el nombre y el equipo del jugador.
+console.log(`El nombre del jugador es ${jugador.nombre} y el equipo es ${jugador.equipo}`)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 40");
 // Ejercicio 40
 // 40.Agrega un método al objeto jugador que imprima un mensaje indicando su posición en el equipo.
+jugador.posicionJugador = function(){
+    console.log(`la posicion del jugador es ${this.posicion}`)
+}
+jugador.posicionJugador()
+
 console.groupEnd();
 
