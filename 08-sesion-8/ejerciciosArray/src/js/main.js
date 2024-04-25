@@ -110,6 +110,9 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 13");
 // Ejercicio 13
 // 13. Utiliza el método forEach para imprimir cada fruta pero convertida a array.
+frutas.forEach(fruta => {
+    console.log(frutas = fruta.split(" "))
+})
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 14");
