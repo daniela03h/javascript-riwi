@@ -1,6 +1,8 @@
 console.groupCollapsed("Ejercicio 1");
 // Ejercicio 1
 // 1. Crea un array llamado frutas que contenga al menos 5 nombres de frutas diferentes.
+let frutas = ["manzana", "banano", "fresa", "mora", "uva"];
+console.log(frutas);
 
 console.groupEnd();
 
@@ -8,57 +10,101 @@ console.groupCollapsed("Ejercicio 2");
 // Ejercicio 2
 // 2. Utiliza un bucle for para recorrer el array frutas e imprimir cada elemento en la consola.
 
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 3");
 // Ejercicio 3
 // 3. Utiliza un foreach para recorrer el array frutas e imprimir cada fruta en mayúscula en la consola.
+frutas.forEach((fruta) => {
+  console.log(fruta.toUpperCase());
+});
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 4");
 // Ejercicio 4
 // 4. Crea un array llamado números que contenga los números del 1 al 10.
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numeros);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 5");
 // Ejercicio 5
 // 5. Utiliza un bucle while para recorrer el array numeros e imprimir cada elemento en la consola.
+let i = 0;
+while (i < numeros.length) {
+  console.log(numeros[i]);
+  i++;
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 6");
 // Ejercicio 6
 // 6. Agrega una nueva fruta al final del array frutas.
+frutas.push("mandarina");
+console.log(frutas);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 7");
 // Ejercicio 7
 // 7. Elimina el segundo elemento del array números.
+numeros.splice(1, 1);
+console.log(numeros);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 8");
 // Ejercicio 8
 // 8. Invierte el orden de los elementos en el array frutas.
+frutas.reverse();
+console.log(frutas);
 
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 9");
 // Ejercicio 9
 // 9. Ordena el array numeros en orden descendente.
+// numeros.sort(function (a, b) {
+//   return b - a
+// })
+
+numeros.sort((a, b) => b - a);
+console.log(numeros);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 10");
 // Ejercicio 10
 // 10. Crea una función llamada buscarFruta que tome como argumento una fruta y devuelva true si esa fruta está en el array frutas, y false en caso contrario.
+// function buscarFruta(fruta) {
+//   return frutas.includes(fruta);
+// }
+// console.log(buscarFruta("manzana"));
+
+function buscarFruta2(fruta) {
+  for (let i = 0; i < frutas.length; i++) {
+    if (frutas[i] === fruta) {
+      return true
+    }  
+  }
+}
+console.log(buscarFruta2("manzana"));
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 11");
 // Ejercicio 11
 // 11. Imprime en la consola el primer elemento del array frutas.
+console.log(frutas[0])
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 12");
 // Ejercicio 12
 // 12. Imprime en la consola el último elemento del array numeros.
+console.log(numeros.at(-1))
+console.log(numeros[numeros.length -1]);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 13");
