@@ -118,6 +118,9 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 14");
 // Ejercicio 14
 // 14. Utiliza un bucle for of para imprimir cada número del array numeros en la consola.
+for (let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i])
+}
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 15");
