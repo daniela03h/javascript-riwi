@@ -119,28 +119,44 @@ console.groupEnd();
 console.group("Ejercicio 19");
 // Ejercicio 19
 // 19.Verifica si una cadena de texto contiene la palabra "JavaScript".
-console.log('Esto es una cadena de texto con la palabra JavaScript'.includes('JavaScript'))
+console.log("Esto es una cadena de texto con la palabra JavaScript".includes("JavaScript"));
 console.groupEnd();
 
 console.group("Ejercicio 20");
 // Ejercicio 20
 // 20.Determina si una cadena tiene más de 10 caracteres.
-console.log('cadena de texto con mas de diez caracteres'.length > 10)
+console.log("cadena de texto con mas de diez caracteres".length > 10);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 21");
 // Ejercicio 21
 // 21.Verifica si una cadena de texto está en minúsculas.
+let cadena = "cadena de texto esta en Minucula";
+console.log(cadena === cadena.toLowerCase());
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 22");
 // Ejercicio 22
 // 22.Determina si una cadena de texto contiene al menos un número.
+let cadenaNum = "cadena de texto contiene al menos un número 123";
+let contieneNum = false;
+
+for (let i = 0; i < cadenaNum.length; i++) {
+  if (!isNaN(parseInt(cadenaNum[i]))) {
+    contieneNum = true;
+    break;
+  }
+}
+
+console.log(contieneNum);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 23");
 // Ejercicio 23
 // 23.Verifica si una cadena de texto termina con un punto (.)
+let cadenaPunto = "cadena de texto termina con un punto.";
+console.log(cadenaPunto[cadenaPunto.length - 1] === ".");
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 24");
@@ -151,46 +167,77 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 25");
 // Ejercicio 25
 // 25.Verifica si un día de la semana es laborable (de lunes a viernes).
+let dia = 8;
+let esLaborable = dia >= 1 && dia <= 5;
+console.log(esLaborable);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 26");
 // Ejercicio 26
 // 26.Determina si un día es fin de semana (sábado o domingo).
+let diaFinDeSemana = 6;
+let esFinDeSemana = diaFinDeSemana >= 6 && diaFinDeSemana <= 7;
+console.log(esFinDeSemana);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 27");
 // Ejercicio 27
 // 27.Verifica si un número representa un mes válido (del 1 al 12).
+let mes = 8;
+let esUnMes = mes >= 1 && mes <= 12;
+console.log(esUnMes);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 28");
 // Ejercicio 28
 // 28.Determina si una hora está en el rango de 9 AM a 6 PM.
+let hora = 8;
+let horaRango = hora >= 9 && hora <= 18;
+console.log(horaRango);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 29");
 // Ejercicio 29
 // 29.Verifica si una persona es mayor de 65 años o menor de 18 años.
+let edad2 = 20;
+let mayorMenor= edad2 >= 65 || edad2 <= 18;
+console.log(mayorMenor);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 30");
 // Ejercicio 30
 // 30.Determina si un triángulo es equilátero (tres lados iguales).
+let lado1 = 8
+let lado2 = 9
+let lado3 = 8
+console.log(lado1 === lado2 && lado2 === lado3 && lado3 === lado1)
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 31");
 // Ejercicio 31
 // 31.Verifica si un triángulo es isósceles (dos lados iguales).
+let lado4 = 8;
+let lado5 = 8;
+
+console.log(lado4 === lado5);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 32");
 // Ejercicio 32
 // 32.Determina si un triángulo es escaleno (todos los lados diferentes).
+let lado6 = 8;
+let lado7 = 9;
+let lado8 = 8;
+console.log(lado1 === lado2 && lado2 === lado3 && lado3 === lado1);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 33");
 // Ejercicio 33
 // 33.Verifica si un número es mayor que el doble de otro número.
+console.log(10 > (6*6))
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 34");
@@ -227,4 +274,3 @@ console.groupCollapsed("Ejercicio 40");
 // Ejercicio 40
 // 40.Determina si la división de dos números es menor que 10.
 console.groupEnd();
-
