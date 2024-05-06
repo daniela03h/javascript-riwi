@@ -243,34 +243,73 @@ console.groupEnd();
 console.groupCollapsed("Ejercicio 34");
 // Ejercicio 34
 // 34.Determina si la suma de dos números es mayor que 100.
+let num1 = 40
+let num2 = 50
+let resultado = num1 + num2
+
+console.log(resultado > 100);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 35");
 // Ejercicio 35
 // 35.Verifica si la resta de dos números es menor que 50.
+let num3 = 100;
+let num4 = 40;
+let resultado2 = num3 - num4;
+
+console.log(resultado2 < 50);
+console.groupEnd();
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 36");
 // Ejercicio 36
 // 36.Determina si un número es el doble del otro número.
+let num5 = 100;
+let num6 = 40;
+let resultado3 = num5 === num6 * 2;
+
+console.log(resultado3);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 37");
 // Ejercicio 37
 // 37.Verifica si el doble de un número es igual al triple de otro número.
+let num7 = 100;
+let num8 = 40;
+let resultado4 = num7 * 2 === num8 * 3;
+
+console.log(resultado4);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 38");
 // Ejercicio 38
 // 38.Determina si la suma de dos números es igual a 50.
+let num9 = 100;
+let num10 = 40;
+let resultado5 = num9 + num10;
+
+console.log(resultado5 === 50);
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 39");
 // Ejercicio 39
 // 39.Verifica si el producto de dos números es mayor que 500.
+let num13 = 100;
+let num14 = 40;
+let resultado7 = num13 * num14 > 500;
+
+console.log(resultado7);
+
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio 40");
 // Ejercicio 40
 // 40.Determina si la división de dos números es menor que 10.
+let num11 = 100;
+let num12 = 40;
+let resultado6 = num11 / num12;
+
+console.log(resultado6 < 10);
 console.groupEnd();
